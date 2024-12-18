@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	@apply scroll-smooth
+}
+
+body {
+	@apply bg-bodyColor text-textColor font-Jost tracking-wider overflow-x-hidden;
+}
+
+section {
+	@apply py-16 md:py-24;
+}
+
+.nav-link {
+	@apply text-lg font-bold hover:text-titleColor duration-300;
+}
+
+/* active */
+.active {
+	@apply text-titleColor;
+}
+
+.btn {
+	@apply border px-5 py-3 text-lg font-bold sm:text-2xl duration-300;
+}
+
+.btn-2 {
+	@apply border px-3 py-2 text-lg font-bold sm:text-2xl duration-300;
+}
+
+.btn:hover,
+.btn-2:hover {
+	@apply bg-[#550955] ;
+}
+
+.title {
+	@apply text-4xl font-bold font-DancingScirpt inline-block;
+}
+
+.subtitle {
+	@apply text-3xl md:text-4xl lg:text-5xl font-bold;
+}
+
+.cardtitle {
+	@apply text-2xl font-bold md:text-2xl;
+}
+
+.cardtitle-2 {
+	@apply text-xl font-bold md:text-2xl xl:text-3xl
+}
